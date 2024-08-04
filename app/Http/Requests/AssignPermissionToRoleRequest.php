@@ -11,7 +11,8 @@ class AssignPermissionToRoleRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true;
+        $user = request()->user();
+        return $user && $user->hasRole('admin');
     }
 
     /**

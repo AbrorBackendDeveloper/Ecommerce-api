@@ -53,11 +53,6 @@ class AuthController extends Controller
     }
 
 
-    public function change_password()
-    {
-        
-    }
-
     public function logout()
     {
         auth()->user()->tokens()->delete();

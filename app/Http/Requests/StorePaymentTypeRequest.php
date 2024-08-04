@@ -11,7 +11,7 @@ class StorePaymentTypeRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return request()->user()->can('create:payment-type');
     }
 
     /**

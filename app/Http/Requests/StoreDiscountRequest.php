@@ -11,7 +11,7 @@ class StoreDiscountRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true;
+        return request()->user()->can('discount:create');
     }
 
     /**

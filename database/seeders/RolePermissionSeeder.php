@@ -35,6 +35,12 @@ class RolePermissionSeeder extends Seeder
         $this->createPermission('user:update');
         $this->createPermission('user:delete');
         $this->createPermission('user:restore');
+        $this->createPermission('discount:viewAny');
+        $this->createPermission('discount:view');
+        $this->createPermission('discount:create');
+        $this->createPermission('discount:update');
+        $this->createPermission('discount:delete');
+        $this->createPermission('discount:restore');
 
         $statsPermission = $this->createPermission('stats:view');
         
@@ -74,6 +80,12 @@ class RolePermissionSeeder extends Seeder
             $this->createPermission('category:update'),
             $this->createPermission('category:delete'),
             $this->createPermission('category:restore'),
+            $this->createPermission('discount:viewAny'),
+            $this->createPermission('discount:view'),
+            $this->createPermission('discount:create'),
+            $this->createPermission('discount:update'),
+            $this->createPermission('discount:delete'),
+            $this->createPermission('discount:restore'),
             $this->createPermission('product:viewAny'),
             $this->createPermission('product:view'),
             $this->createPermission('product:create'),

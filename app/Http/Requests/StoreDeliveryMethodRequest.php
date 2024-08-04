@@ -11,7 +11,7 @@ class StoreDeliveryMethodRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return request()->user()->can('create:delivery-method');
     }
 
     /**
